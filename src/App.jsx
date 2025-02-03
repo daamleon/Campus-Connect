@@ -12,6 +12,7 @@ import "./index.css";
 
 function App() {
   const [showEmbed, setShowEmbed] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // State untuk mengatur apakah menu mobile terbuka
   const embedRef = useRef(null);
 
   const handleShowEmbed = () => {
@@ -27,9 +28,10 @@ function App() {
 
   return (
     <div className="w-screen h-screen flex flex-col bg-white">
-      <Header />
-      <NavMobile />
-      <div className="pt-12 flex-1 overflow-auto">
+      <Header setIsOpen={setIsOpen} /> {/* Kirimkan setIsOpen ke Header */}
+      <NavMobile isOpen={isOpen} setIsOpen={setIsOpen} />{" "}
+      {/* Kirimkan isOpen dan setIsOpen ke NavMobile */}
+      <div className="pt-12 flex-1 overflow-x-hidden">
         <Hero />
         <MainContent handleShowEmbed={handleShowEmbed} />
         {showEmbed && (

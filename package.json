@@ -1,6 +1,6 @@
 {
-  "homepage": "https://daamleon/github.io/RunFest",
-  "name": "landing-page",
+  "homepage": "https://daamleon/github.io/Campus-Connect",
+  "name": "landing-page2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "lucide-react": "^0.474.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icon": "^1.0.0",
     "react-icons": "^5.4.0",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1"
